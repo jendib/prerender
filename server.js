@@ -8,5 +8,6 @@ server.use(prerender.browserForceRestart());
 // server.use(prerender.blockResources());
 server.use(prerender.removeScriptTags());
 server.use(prerender.httpHeaders());
+server.use(prerender.s3Cache());
 
 server.start();
